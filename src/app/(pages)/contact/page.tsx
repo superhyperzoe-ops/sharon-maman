@@ -68,21 +68,6 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-2">
                   <label
-                    htmlFor="email"
-                    className="text-xs uppercase tracking-[0.2em] text-ink/70"
-                  >
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="nom@domaine.fr"
-                    className="w-full border border-sand bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label
                     htmlFor="entreprise"
                     className="text-xs uppercase tracking-[0.2em] text-ink/70"
                   >
@@ -93,6 +78,21 @@ export default function ContactPage() {
                     name="entreprise"
                     type="text"
                     placeholder="Nom de l’entreprise"
+                    className="w-full border border-sand bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label
+                    htmlFor="email"
+                    className="text-xs uppercase tracking-[0.2em] text-ink/70"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="nom@domaine.fr"
                     className="w-full border border-sand bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                   />
                 </div>
