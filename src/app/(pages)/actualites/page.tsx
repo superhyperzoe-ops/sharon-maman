@@ -44,7 +44,7 @@ export default function ActualitesPage() {
                 href={`/actualites/${article.slug}`}
                 className="block h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                <Card className="flex h-full min-h-[260px] flex-col !bg-sand/40 transition-colors hover:!bg-sand/70 md:min-h-[320px]">
+                <Card className="flex h-full min-h-[220px] flex-col !bg-sand/40 transition-colors hover:!bg-sand/70 md:min-h-[260px]">
                   <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
                     {article.date}
                   </p>
