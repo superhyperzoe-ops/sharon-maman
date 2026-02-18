@@ -136,6 +136,9 @@ export default function RepriseActivitePage() {
                 );
               }
               if (block.type === "list") {
+                if (!block.items || block.items.length === 0) {
+                  return null;
+                }
                 return (
                   <ul key={`list-${index}`} className="space-y-2 pl-5 text-ink/80">
                     {block.items.map((item) => (
