@@ -40,13 +40,13 @@ export default function ContactPage() {
                   Du lundi au vendredi, de 9h à 20h, sur rendez-vous uniquement
                 </p>
               </Card>
-              <div className="overflow-hidden border border-sand">
+              <div className="flex items-center justify-center overflow-hidden border border-sand bg-white">
                 <Image
                   src="/shacontact.jpg"
                   alt="Localisation du cabinet"
                   width={1200}
                   height={800}
-                  className="h-48 w-full object-contain lg:h-56"
+                  className="h-48 w-auto max-w-full object-contain lg:h-56"
                 />
               </div>
             </div>
