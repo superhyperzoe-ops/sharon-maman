@@ -54,7 +54,7 @@ export default function ActualitesPage() {
                   <p className="mt-3 text-sm text-ink/80">
                     {article.excerpt}
                   </p>
-                  <span className="mt-4 text-xs uppercase tracking-[0.2em] text-ink/70">
+                  <span className="mt-auto pt-4 text-xs uppercase tracking-[0.2em] text-ink/70">
                     Lire l&apos;article
                   </span>
                 </Card>
