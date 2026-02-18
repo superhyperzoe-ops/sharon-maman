@@ -29,7 +29,7 @@ export default function CabinetPage() {
               </div>
             </div>
             <div className="order-2 lg:order-1 lg:col-span-7 lg:col-start-1">
-              <div className="w-full space-y-6 text-[16px] leading-[1.6] text-ink/80">
+              <div className="w-full space-y-6 text-justify text-[16px] leading-[1.6] text-ink/80">
                 <div className="space-y-5">
                   <p>
                     Avocate au Barreau de Paris, Maître Maman exerce en droit des affaires.
@@ -66,7 +66,7 @@ export default function CabinetPage() {
             </div>
           </div>
 
-          <div className="mt-6 space-y-5 text-[16px] leading-[1.6] text-ink/80 lg:max-w-[1100px]">
+          <div className="mt-6 space-y-5 text-justify text-[16px] leading-[1.6] text-ink/80 lg:max-w-[1100px]">
             <p>
               Titulaire de la qualification de mandataire sportif, Maître Maman
               intervient également auprès des acteurs du sport professionnel, qu’elle
@@ -96,7 +96,7 @@ export default function CabinetPage() {
 
       <Section
         id="valeurs-et-engagement"
-        className="bg-accent/10 py-16 lg:py-20 scroll-mt-0"
+        className="bg-accent/10 pt-10 pb-16 lg:pt-12 lg:pb-20 scroll-mt-0"
       >
         <Container className="max-w-[1200px]">
           <div className="mx-auto max-w-[820px] text-center">
@@ -188,14 +188,14 @@ export default function CabinetPage() {
       <Section id="honoraires" className="py-20 scroll-mt-0">
         <Container>
           <div className="max-w-[1200px] space-y-6 text-[16px] leading-[1.6] text-ink/80">
-            <div className="space-y-3">
+            <div className="space-y-3 text-center">
               <h2 className="text-3xl font-semibold uppercase tracking-[0.25em] text-ink">
                 Honoraires
               </h2>
               <p className="text-sm font-semibold tracking-[0.2em] text-accent/80">
                 Une approche transparente et structurée des modalités d’intervention.
               </p>
-              <div className="h-px w-16 bg-sand" aria-hidden="true" />
+              <div className="mx-auto h-px w-16 bg-sand" aria-hidden="true" />
             </div>
             <div className="space-y-4">
               <p>

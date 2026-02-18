@@ -4,96 +4,139 @@ import { Section } from "@/components/Section";
 
 const articles = [
   {
-    slug: "reforme-procedures-civiles-2024",
-    title: "Réforme des procédures civiles : points clés 2024",
-    date: "Janvier 2024",
+    slug: "reprise-activite",
+    title:
+      "Reprise de fonds de commerce ou de cabinet libéral : 5 conseils juridiques pour sécuriser votre acquisition",
+    date: "Article",
     content: [
-      "Cet article présente une synthèse des évolutions majeures et de leurs impacts pratiques. Il s'agit de points de vigilance à intégrer dans la gestion quotidienne des dossiers.",
-      "Nous détaillons les changements procéduraux, les délais renforcés et les implications sur la stratégie de défense. L'objectif : sécuriser la conduite des procédures dès l'amont.",
-      "Une lecture stratégique permet d'anticiper les effets concrets sur les entreprises et d'ajuster la documentation contractuelle en conséquence.",
+      {
+        type: "paragraph",
+        text: "La reprise d’un fonds de commerce, d’un cabinet libéral ou d’une patientèle constitue une opération stratégique à forts enjeux juridiques et financiers. Une cession d’activité mal préparée peut générer des risques importants pour l’acquéreur comme pour le cédant. Voici cinq conseils juridiques essentiels pour sécuriser durablement votre reprise d’activité.",
+      },
+      { type: "heading", text: "Ne pas sous-estimer la promesse de cession" },
+      {
+        type: "paragraph",
+        text: "La promesse de cession n’est pas une simple formalité préalable à l’acte définitif. Elle fixe dès ce stade les règles juridiques de l’opération.",
+      },
+      {
+        type: "paragraph",
+        text: "Elle doit notamment encadrer :",
+      },
+      {
+        type: "list",
+        items: [
+          "Le prix de cession et ses modalités de paiement ;",
+          "Les conditions suspensives ;",
+          "Les engagements réciproques des parties.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Une promesse insuffisamment rédigée peut fragiliser l’ensemble de la cession.",
+      },
+      { type: "heading", text: "Définir précisément la consistance de la reprise" },
+      {
+        type: "paragraph",
+        text: "L’acte doit déterminer avec précision ce que l’acquéreur reprend réellement.",
+      },
+      {
+        type: "paragraph",
+        text: "Il convient d’identifier notamment :",
+      },
+      {
+        type: "list",
+        items: [
+          "Le fonds de commerce ou la patientèle ;",
+          "Le droit au bail commercial ;",
+          "Le matériel professionnel ;",
+          "Les éléments incorporels (nom commercial, clientèle, contrats en cours…).",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Toute imprécision peut devenir source de contentieux postérieur.",
+      },
+      { type: "heading", text: "Sécuriser les conditions suspensives dès la promesse" },
+      {
+        type: "paragraph",
+        text: "Certaines conditions doivent impérativement être validées avant la réalisation définitive de la cession.",
+      },
+      {
+        type: "paragraph",
+        text: "Il s’agit notamment :",
+      },
+      {
+        type: "list",
+        items: [
+          "De l’obtention du financement bancaire ;",
+          "De l’accord du bailleur pour la cession du bail ;",
+          "Des autorisations ordinales ou administratives requises – notamment dans le cadre d’activités réglementées ;",
+          "Du transfert des contrats essentiels à l’exploitation.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Ces éléments doivent être rigoureusement encadrés afin d’éviter toute insécurité juridique.",
+      },
+      { type: "heading", text: "Anticiper l’après-cession dès la négociation" },
+      {
+        type: "paragraph",
+        text: "La signature de l’acte de cession définitif ne marque pas nécessairement la fin des engagements.",
+      },
+      {
+        type: "paragraph",
+        text: "Il est indispensable de prévoir :",
+      },
+      {
+        type: "list",
+        items: [
+          "Une clause de non-concurrence adaptée ;",
+          "Une période d’accompagnement du cédant ;",
+          "La continuité des contrats clés ;",
+          "Les modalités de continuité de l’exploitation.",
+        ],
+      },
+      { type: "heading", text: "Réaliser un audit juridique préalable" },
+      {
+        type: "paragraph",
+        text: "Un audit juridique préalable permet d’identifier les risques liés à la reprise.",
+      },
+      {
+        type: "paragraph",
+        text: "Il porte notamment sur :",
+      },
+      {
+        type: "list",
+        items: [
+          "Les contrats en cours ;",
+          "La situation locative (bail commercial, autorisations, etc) ;",
+          "Les engagements existants ;",
+          "Les risques juridiques et contentieux potentiels.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Cet audit constitue un outil essentiel de sécurisation de l’opération.",
+      },
+      {
+        type: "paragraph",
+        text: "Une cession de fonds de commerce ou de cabinet libéral réussie repose sur une préparation juridique structurée et anticipée. Le cabinet vous propose un accompagnement adapté à votre activité qui permet d’anticiper les risques, de sécuriser les engagements contractuels et de protéger durablement votre investissement.",
+      },
     ],
   },
   {
-    slug: "negociation-contractuelle-clauses-critiques",
-    title: "Négociation contractuelle : sécuriser vos clauses critiques",
-    date: "Décembre 2023",
-    content: [
-      "La négociation contractuelle impose une attention particulière aux clauses structurantes, notamment la responsabilité, la durée et les modalités de sortie.",
-      "Une rédaction précise réduit les zones d'incertitude et limite l'exposition au risque contentieux.",
-      "Cet article propose une approche méthodique pour sécuriser les clauses sensibles tout en préservant l'équilibre de la relation commerciale.",
-    ],
-  },
-  {
-    slug: "prevenir-risque-contentieux-entreprise",
-    title: "Prévenir le risque contentieux en entreprise",
-    date: "Novembre 2023",
-    content: [
-      "La prévention du risque contentieux repose sur des process clairs et des indicateurs de suivi adaptés à l'activité.",
-      "L'identification précoce des zones de friction permet d'agir avant la cristallisation du litige.",
-      "Nous proposons des outils concrets pour structurer une politique de prévention efficace et pérenne.",
-    ],
-  },
-  {
-    slug: "strategie-contentieuse-anticiper",
-    title: "Stratégie contentieuse : anticiper les scénarios clés",
-    date: "Octobre 2023",
-    content: [
-      "Une stratégie contentieuse maîtrisée commence par une cartographie des risques et des scénarios possibles.",
-      "L'anticipation des arguments adverses et des étapes procédurales renforce la position dès les premiers échanges.",
-      "Cet article propose un cadre de préparation stratégique pour gagner en cohérence et en efficacité.",
-    ],
-  },
-  {
-    slug: "croissance-externe-securiser",
-    title: "Croissance externe : sécuriser les étapes décisives",
-    date: "Septembre 2023",
-    content: [
-      "Une opération de croissance externe exige un pilotage juridique rigoureux à chaque étape.",
-      "La due diligence, les garanties et la gouvernance post-opération sont des points déterminants.",
-      "Nous présentons les précautions essentielles pour sécuriser les décisions et limiter les risques.",
-    ],
-  },
-  {
-    slug: "gouvernance-clarifier-roles",
-    title: "Gouvernance : clarifier les rôles et responsabilités",
-    date: "Août 2023",
-    content: [
-      "La gouvernance efficace repose sur une répartition claire des rôles et une organisation documentée.",
-      "Les délégations et procédures internes doivent être adaptées aux enjeux et à la taille de la structure.",
-      "Cet article met en lumière les bonnes pratiques pour renforcer la cohérence décisionnelle.",
-    ],
-  },
-  {
-    slug: "gestion-litiges-commerciaux",
-    title: "Gestion des litiges commerciaux : bonnes pratiques",
-    date: "Juillet 2023",
-    content: [
-      "La gestion des litiges commerciaux requiert une approche équilibrée entre fermeté et maintien de la relation.",
-      "Une documentation complète et une stratégie claire réduisent les incertitudes.",
-      "Nous détaillons les réflexes essentiels pour une gestion efficace et structurée.",
-    ],
-  },
-  {
-    slug: "conformite-contrats-cadres",
-    title: "Conformité et contrats cadres : les essentiels",
-    date: "Juin 2023",
-    content: [
-      "Les contrats cadres doivent rester cohérents avec les pratiques opérationnelles pour éviter les fragilités.",
-      "La conformité suppose une harmonisation des engagements et un suivi régulier.",
-      "Nous exposons les points de contrôle à privilégier pour renforcer la sécurité juridique.",
-    ],
-  },
-  {
-    slug: "negociation-sportive",
-    title: "Négociation sportive : enjeux juridiques actuels",
-    date: "Mai 2023",
-    content: [
-      "La négociation sportive impose une connaissance fine des règles applicables et des équilibres contractuels.",
-      "Les intérêts des différentes parties doivent être sécurisés par une rédaction précise.",
-      "Cet article propose un éclairage sur les enjeux actuels et les pratiques recommandées.",
-    ],
+    slug: "pacte-associes",
+    title: "Pacte d'associés",
+    date: "À venir",
+    content: [{ type: "paragraph", text: "Contenu à venir." }],
   },
 ];
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return articles.map((article) => ({ slug: article.slug }));
+}
 
 type PageProps = {
   params: { slug: string };
@@ -123,9 +166,27 @@ export default function ActualitePage({ params }: PageProps) {
           </div>
 
           <div className="space-y-4 text-base leading-relaxed text-ink/80">
-            {article.content.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            {article.content.map((block, index) => {
+              if (block.type === "heading") {
+                return (
+                  <h2 key={`${block.text}-${index}`} className="text-lg font-semibold text-ink">
+                    {block.text}
+                  </h2>
+                );
+              }
+              if (block.type === "list") {
+                return (
+                  <ul key={`list-${index}`} className="space-y-2 pl-5 text-ink/80">
+                    {block.items.map((item) => (
+                      <li key={item} className="list-disc">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                );
+              }
+              return <p key={`${block.text}-${index}`}>{block.text}</p>;
+            })}
           </div>
         </div>
       </Container>

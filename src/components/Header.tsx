@@ -73,7 +73,7 @@ export function Header() {
             >
               <Link
                 href="/cabinet"
-                className={`text-sm font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                className={`text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                   isCabinetActive ? "text-accent" : "text-ink"
                 }`}
               >
@@ -125,7 +125,7 @@ export function Header() {
             >
               <Link
                 href="/expertises"
-                className={`text-sm font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                className={`text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                   isExpertisesActive ? "text-accent" : "text-ink"
                 }`}
               >
@@ -149,10 +149,10 @@ export function Header() {
                       className="block px-4 py-2 text-sm text-ink/80 transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                       onClick={() => setIsExpertisesOpen(false)}
                     >
-                      Corporate & Fusions-acquisitions
+                      Corporate & Fusions-Acquisitions
                     </Link>
                     <Link
-                      href="/expertises/droit-des-affaires"
+                      href="/expertises/transmission-structures-reglementees"
                       className="block px-4 py-2 text-sm text-ink/80 transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                       onClick={() => setIsExpertisesOpen(false)}
                     >
@@ -192,7 +192,7 @@ export function Header() {
               <div className="space-y-2">
                 <Link
                   href="/cabinet"
-                  className={`block text-sm font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
+                  className={`block text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
                     isCabinetActive ? "text-accent" : "text-ink"
                   }`}
                   onClick={() => setIsMobileOpen(false)}
@@ -226,7 +226,7 @@ export function Header() {
               <div className="space-y-2">
                 <Link
                   href="/expertises"
-                  className={`block text-sm font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
+                  className={`block text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
                     isExpertisesActive ? "text-accent" : "text-ink"
                   }`}
                   onClick={() => setIsMobileOpen(false)}
@@ -239,10 +239,10 @@ export function Header() {
                     className="block transition-colors hover:text-accent"
                     onClick={() => setIsMobileOpen(false)}
                   >
-                    Corporate & Fusions-acquisitions
+                    Corporate & Fusions-Acquisitions
                   </Link>
                   <Link
-                    href="/expertises/droit-des-affaires"
+                    href="/expertises/transmission-structures-reglementees"
                     className="block transition-colors hover:text-accent"
                     onClick={() => setIsMobileOpen(false)}
                   >
@@ -270,14 +270,18 @@ export function Header() {
                 </NavLink>
               ))}
               <div className="pt-2">
-                <Button href="/contact">Prendre rendez-vous</Button>
+                <Button href="/contact" className="px-4 py-2 text-[11px]">
+                  Prendre rendez-vous
+                </Button>
               </div>
             </div>
           </Container>
         </div>
       )}
       <div className="absolute right-6 top-1/2 hidden -translate-y-1/2 md:block">
-        <Button href="/contact">Prendre rendez-vous</Button>
+        <Button href="/contact" className="px-4 py-2 text-[11px]">
+          Prendre rendez-vous
+        </Button>
       </div>
     </header>
   );

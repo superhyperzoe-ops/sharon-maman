@@ -31,7 +31,7 @@ const expertises = [
   {
     title:
       "Transmission et acquisition d’entreprises et de structures réglementées",
-    slug: "droit-des-affaires",
+    slug: "transmission-structures-reglementees",
     items: [
       "Cession et acquisition de fonds de commerce",
       "Transmission de cabinets et structures d’exercice libéral",
@@ -103,12 +103,11 @@ export default function ExpertisesPage() {
     <Section className="pt-6 pb-20">
       <Container className="flex flex-col">
         <div className="space-y-4">
-          <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Les expertises
+          <h1 className="text-3xl font-semibold uppercase tracking-[0.25em] text-ink sm:text-4xl">
+            EXPERTISES
           </h1>
           <p className="text-base leading-relaxed text-ink/80">
-            Quatre domaines clés, chacun traité avec la même exigence et la même
-            précision.
+            Des expertises ciblées pour sécuriser vos décisions stratégiques
           </p>
         </div>
 

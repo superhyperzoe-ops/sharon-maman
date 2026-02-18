@@ -5,67 +5,18 @@ import { Section } from "@/components/Section";
 
 const articles = [
   {
-    slug: "reforme-procedures-civiles-2024",
-    title: "Réforme des procédures civiles : points clés 2024",
-    date: "Janvier 2024",
+    slug: "reprise-activite",
+    title:
+      "Reprise de fonds de commerce ou de cabinet libéral : 5 conseils juridiques pour sécuriser votre acquisition",
+    date: "Article",
     excerpt:
-      "Synthèse des changements majeurs et impacts pour les entreprises et les praticiens.",
+      "Cinq conseils juridiques pour sécuriser durablement une reprise d’activité.",
   },
   {
-    slug: "negociation-contractuelle-clauses-critiques",
-    title: "Négociation contractuelle : sécuriser vos clauses critiques",
-    date: "Décembre 2023",
-    excerpt:
-      "Clauses de responsabilité, audit, durée et sortie : les points à verrouiller.",
-  },
-  {
-    slug: "prevenir-risque-contentieux-entreprise",
-    title: "Prévenir le risque contentieux en entreprise",
-    date: "Novembre 2023",
-    excerpt:
-      "Mettre en place des process et des indicateurs pour limiter l'exposition.",
-  },
-  {
-    slug: "strategie-contentieuse-anticiper",
-    title: "Stratégie contentieuse : anticiper les scénarios clés",
-    date: "Octobre 2023",
-    excerpt:
-      "Cartographier les risques et bâtir une position procédurale cohérente.",
-  },
-  {
-    slug: "croissance-externe-securiser",
-    title: "Croissance externe : sécuriser les étapes décisives",
-    date: "Septembre 2023",
-    excerpt:
-      "Points d'attention juridiques avant, pendant et après l'opération.",
-  },
-  {
-    slug: "gouvernance-clarifier-roles",
-    title: "Gouvernance : clarifier les rôles et responsabilités",
-    date: "Août 2023",
-    excerpt:
-      "Statuts, délégations et pratiques internes pour une gouvernance saine.",
-  },
-  {
-    slug: "gestion-litiges-commerciaux",
-    title: "Gestion des litiges commerciaux : bonnes pratiques",
-    date: "Juillet 2023",
-    excerpt:
-      "Préserver la relation tout en défendant les intérêts essentiels.",
-  },
-  {
-    slug: "conformite-contrats-cadres",
-    title: "Conformité et contrats cadres : les essentiels",
-    date: "Juin 2023",
-    excerpt:
-      "Harmoniser les engagements et éviter les incohérences contractuelles.",
-  },
-  {
-    slug: "negociation-sportive",
-    title: "Négociation sportive : enjeux juridiques actuels",
-    date: "Mai 2023",
-    excerpt:
-      "Encadrer la carrière et sécuriser les relations avec les clubs.",
+    slug: "pacte-associes",
+    title: "Le pacte d’associés : un instrument juridique d’anticipation stratégique",
+    date: "Article",
+    excerpt: "Organiser les relations entre associés et anticiper les risques.",
   },
 ];
 
@@ -79,23 +30,21 @@ export default function ActualitesPage() {
               Actualités
             </p>
             <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Publications et analyses juridiques.
+              Publications et décryptage juridique
             </h1>
             <p className="text-base leading-relaxed text-ink/80">
               Retrouvez les dernières actualités, décryptages et événements du
               cabinet.
             </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {articles.map((article) => (
-              <Card
+              <Link
                 key={article.title}
-                className="flex h-full flex-col transition-colors hover:bg-sand/40"
+                href={`/actualites/${article.slug}`}
+                className="block h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                <Link
-                  href={`/actualites/${article.slug}`}
-                  className="flex h-full flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                >
+                <Card className="flex h-full min-h-[260px] flex-col !bg-sand/40 transition-colors hover:!bg-sand/70 md:min-h-[320px]">
                   <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
                     {article.date}
                   </p>
@@ -108,8 +57,8 @@ export default function ActualitesPage() {
                   <span className="mt-4 text-xs uppercase tracking-[0.2em] text-ink/70">
                     Lire l&apos;article
                   </span>
-                </Link>
-              </Card>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

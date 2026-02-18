@@ -1,24 +1,6 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 
-const subcategories = [
-  {
-    title: "Encadrement des mandats",
-    description:
-      "Structuration des mandats et sécurisation des relations entre mandataires, clubs et fédérations.",
-  },
-  {
-    title: "Conformité & réglementation",
-    description:
-      "Mise en conformité avec les règles nationales et internationales applicables au secteur sportif.",
-  },
-  {
-    title: "Négociation & protection des intérêts",
-    description:
-      "Négociation contractuelle et protection des intérêts à chaque étape de la carrière.",
-  },
-];
-
 export default function MandatairesSportifsPage() {
   return (
     <Section className="pt-24 pb-20">
@@ -32,25 +14,43 @@ export default function MandatairesSportifsPage() {
               ← Retour aux expertises
             </a>
             <h1 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Mandataires sportifs
+              Mandataire Sportif – Accompagnement juridique des acteurs du sport professionnel
             </h1>
-            <p className="text-base leading-relaxed text-ink/80">
-              Un accompagnement juridique dédié aux acteurs du sport, pour
-              sécuriser les trajectoires et les engagements.
-            </p>
           </div>
 
-          <div className="grid gap-6">
-            {subcategories.map((item) => (
-              <div key={item.title} className="border border-sand p-6">
-                <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-ink">
-                  {item.title}
-                </h2>
-                <p className="mt-3 text-sm leading-relaxed text-ink/80">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+          <div className="space-y-4 text-base leading-relaxed text-ink/80 text-justify">
+            <p>
+              Titulaire de la qualification de mandataire sportif, Maître Sharon Maman intervient
+              auprès des sportifs professionnels, clubs, entraîneurs et autres acteurs du sport
+              dans la structuration et la sécurisation de leurs relations contractuelles.
+            </p>
+            <p>
+              À ce titre, elle peut être amenée à représenter ses mandants dans la négociation et
+              la conclusion de leurs contrats, qu’il s’agisse de contrats de travail, d’accords de
+              transfert, de conventions de sponsoring ou d’exploitation des droits à l’image. Elle
+              intervient au nom et pour le compte de ses clients, avec une approche rigoureuse et
+              stratégique.
+            </p>
+            <p>
+              Maître Sharon Maman accompagne également les opérations de transfert et les
+              changements de structure sportive, en veillant au respect des réglementations
+              applicables et à la sécurisation des intérêts financiers et contractuels en jeu.
+            </p>
+            <p>
+              Son intervention ne se limite pas à la négociation ponctuelle d’un contrat. Elle
+              s’inscrit dans une logique d’accompagnement global, intégrant la gestion des
+              partenariats commerciaux, la valorisation des droits à l’image et l’organisation
+              juridique de la carrière sportive.
+            </p>
+            <p>
+              Forte d’une pratique dédiée au secteur sportif, Maître Sharon Maman met son expertise
+              au service de sportifs professionnels comme d’acteurs en devenir, avec la même
+              exigence et la même rigueur.
+            </p>
+            <p className="pt-2 text-base italic font-semibold text-accent">
+              En qualité de mandataire sportif, Maître Sharon Maman vous accompagne avec exigence
+              et vision stratégique dans la protection et la valorisation de vos intérêts.
+            </p>
           </div>
         </div>
       </Container>

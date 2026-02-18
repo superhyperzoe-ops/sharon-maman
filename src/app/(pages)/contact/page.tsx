@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
@@ -9,7 +10,7 @@ export default function ContactPage() {
       <Section className="pt-24">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
-            <div className="space-y-6">
+            <div className="space-y-4">
               <p className="text-xs uppercase tracking-[0.3em] text-ink/70">
                 Contact
               </p>
@@ -40,12 +41,12 @@ export default function ContactPage() {
                 </p>
               </Card>
               <div className="overflow-hidden border border-sand">
-                <iframe
-                  title="Localisation du cabinet"
-                  src="https://www.google.com/maps?q=12%20rue%20de%20la%20Paix%2C%2075002%20Paris&output=embed"
-                  className="h-64 w-full lg:h-72"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                <Image
+                  src="/shacontact.jpg"
+                  alt="Localisation du cabinet"
+                  width={1200}
+                  height={800}
+                  className="h-48 w-full object-contain lg:h-56"
                 />
               </div>
             </div>
