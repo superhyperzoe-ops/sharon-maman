@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Reprise d'activité : 5 conseils juridiques",
+  description:
+    "Conseils juridiques pour sécuriser la reprise d’un fonds de commerce, cabinet libéral ou patientèle.",
+  keywords: [
+    "reprise d'activité",
+    "transmission d'entreprise",
+    "fonds de commerce",
+    "cabinet libéral",
+    "avocat Paris",
+  ],
+};
 
 const content = [
   {

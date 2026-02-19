@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Mandataire sportif",
+  description:
+    "Accompagnement juridique des acteurs du sport professionnel : contrats, transferts, partenariats et droits à l’image.",
+  keywords: [
+    "mandataire sportif",
+    "droit du sport",
+    "contrats sportifs",
+    "avocat Paris",
+  ],
+};
 
 export default function MandatairesSportifsPage() {
   return (

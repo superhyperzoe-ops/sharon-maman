@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Mentions légales",
+  description:
+    "Mentions légales du cabinet Sharon Maman, avocate à Paris en droit des affaires.",
+  keywords: ["mentions légales", "avocat Paris", "Sharon Maman"],
+};
 
 export default function MentionsLegalesPage() {
   return (

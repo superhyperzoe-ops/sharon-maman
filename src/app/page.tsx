@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
+
+export const metadata: Metadata = {
+  title: "Avocat en droit des affaires à Paris",
+  description:
+    "Sharon Maman, avocate à Paris. Cabinet spécialisé en droit des affaires, fusion-acquisition, transmission d'entreprise et droit commercial.",
+  keywords: [
+    "droit des affaires",
+    "avocat",
+    "Paris",
+    "Sharon Maman",
+    "fusion-acquisition",
+    "transmission d'entreprise",
+    "droit commercial",
+  ],
+};
 
 export default function Home() {
   return (

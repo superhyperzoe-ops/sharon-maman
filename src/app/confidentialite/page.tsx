@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Politique de confidentialité",
+  description:
+    "Politique de confidentialité du cabinet Sharon Maman, avocate à Paris.",
+  keywords: ["confidentialité", "RGPD", "avocat Paris", "Sharon Maman"],
+};
 
 export default function ConfidentialitePage() {
   return (

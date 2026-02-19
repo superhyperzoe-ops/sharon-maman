@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Transmission et acquisition d’entreprises",
+  description:
+    "Transmission et acquisition d’entreprises et structures réglementées : structuration, audit et sécurisation juridique.",
+  keywords: [
+    "transmission d'entreprise",
+    "acquisition d'entreprise",
+    "structures réglementées",
+    "avocat Paris",
+  ],
+};
 
 export default function TransmissionStructuresReglementeesPage() {
   return (

@@ -1,7 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Actualités",
+  description:
+    "Publications et décryptage juridique en droit des affaires, transmission et pactes d’associés.",
+  keywords: [
+    "actualités juridiques",
+    "droit des affaires",
+    "pacte d'associés",
+    "transmission d'entreprise",
+  ],
+};
 
 const articles = [
   {

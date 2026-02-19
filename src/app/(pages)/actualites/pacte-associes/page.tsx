@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Le pacte d’associés",
+  description:
+    "Comprendre le pacte d’associés et ses fonctions : gouvernance, liquidité, sortie et sécurisation des relations.",
+  keywords: [
+    "pacte d'associés",
+    "droit des sociétés",
+    "gouvernance",
+    "avocat Paris",
+  ],
+};
 
 const content = [
   {

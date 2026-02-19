@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Expertises",
+  description:
+    "Expertises du cabinet Sharon Maman : droit des affaires, fusion-acquisition, transmission d'entreprise, droit commercial et mandataire sportif.",
+  keywords: [
+    "droit des affaires",
+    "fusion-acquisition",
+    "transmission d'entreprise",
+    "droit commercial",
+    "mandataire sportif",
+    "avocat Paris",
+  ],
+};
 
 const expertises = [
   {

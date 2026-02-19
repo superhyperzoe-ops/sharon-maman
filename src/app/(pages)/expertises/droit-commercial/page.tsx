@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Droit commercial et de la concurrence",
+  description:
+    "Structuration et sécurisation des relations commerciales, contrats et conformité concurrentielle.",
+  keywords: [
+    "droit commercial",
+    "concurrence",
+    "contrats commerciaux",
+    "avocat Paris",
+  ],
+};
 
 export default function DroitCommercialPage() {
   return (

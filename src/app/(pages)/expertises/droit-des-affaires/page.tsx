@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Corporate & Fusions-Acquisitions",
+  description:
+    "Accompagnement en droit des sociétés, gouvernance, levées de fonds et opérations de fusion-acquisition.",
+  keywords: [
+    "droit des affaires",
+    "fusion-acquisition",
+    "levée de fonds",
+    "gouvernance",
+    "avocat Paris",
+  ],
+};
 
 export default function DroitDesAffairesPage() {
   return (

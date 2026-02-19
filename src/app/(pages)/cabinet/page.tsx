@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+
+export const metadata: Metadata = {
+  title: "Le cabinet",
+  description:
+    "Présentation du cabinet Sharon Maman, avocate à Paris en droit des affaires, transmission d'entreprise, fusion-acquisition et droit commercial.",
+  keywords: [
+    "Sharon Maman",
+    "avocat",
+    "Paris",
+    "droit des affaires",
+    "fusion-acquisition",
+    "transmission d'entreprise",
+  ],
+};
 
 export default function CabinetPage() {
   return (
