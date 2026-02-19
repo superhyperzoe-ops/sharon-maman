@@ -15,6 +15,7 @@ export default function ContactPage() {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus("loading");
     setErrorMessage("");
 
@@ -33,7 +34,7 @@ export default function ContactPage() {
         throw new Error(data?.error || "Une erreur est survenue.");
       }
 
-      event.currentTarget.reset();
+      form.reset();
       setStatus("success");
     } catch (error) {
       setStatus("error");
