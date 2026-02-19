@@ -171,12 +171,17 @@ export default function ContactPage() {
                   />
                 </div>
                 {status === "success" && (
-                  <p className="text-sm text-accent">
+                  <div
+                    role="status"
+                    className="rounded-sm border border-accent/30 bg-accent/10 px-3 py-2 text-sm text-accent"
+                  >
                     Votre message a bien été envoyé.
-                  </p>
+                  </div>
                 )}
                 {status === "error" && (
-                  <p className="text-sm text-red-600">{errorMessage}</p>
+                  <div className="rounded-sm border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+                    {errorMessage}
+                  </div>
                 )}
                 <Button type="submit" className="mt-auto" disabled={status === "loading"}>
                   {status === "loading" ? "Envoi..." : "Envoyer"}
