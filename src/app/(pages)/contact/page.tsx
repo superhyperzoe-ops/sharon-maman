@@ -1,10 +1,48 @@
+("use client");
+
 import Image from "next/image";
+import { useState } from "react";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 
 export default function ContactPage() {
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
+    "idle"
+  );
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    const formData = new FormData(event.currentTarget);
+    const payload = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data?.error || "Une erreur est survenue.");
+      }
+
+      event.currentTarget.reset();
+      setStatus("success");
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(
+        error instanceof Error ? error.message : "Une erreur est survenue."
+      );
+    }
+  }
+
   return (
     <div className="bg-white text-ink">
       <Section className="pt-24">
@@ -40,18 +78,20 @@ export default function ContactPage() {
                   Du lundi au vendredi, de 9h à 20h, sur rendez-vous uniquement
                 </p>
               </Card>
-              <div className="flex-1 border border-sand bg-white">
-                <Image
-                  src="/paris.jpg"
-                  alt="Localisation du cabinet"
-                  width={1200}
-                  height={800}
-                  className="h-full w-full object-cover"
-                />
+              <div className="flex-1 pb-6">
+                <div className="h-full border border-sand bg-white">
+                  <Image
+                    src="/paris.jpg"
+                    alt="Localisation du cabinet"
+                    width={1200}
+                    height={800}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             <Card className="h-full">
-              <form className="flex h-full flex-col gap-5">
+              <form className="flex h-full flex-col gap-5" onSubmit={handleSubmit}>
                 <div className="space-y-2">
                   <label
                     htmlFor="nom"
@@ -64,6 +104,7 @@ export default function ContactPage() {
                     name="nom"
                     type="text"
                     placeholder="Votre nom"
+                    required
                     className="w-full border border-sand bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                   />
                 </div>
@@ -94,6 +135,7 @@ export default function ContactPage() {
                     name="email"
                     type="email"
                     placeholder="nom@domaine.fr"
+                    required
                     className="w-full border border-sand bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                   />
                 </div>
@@ -124,11 +166,20 @@ export default function ContactPage() {
                     name="message"
                     rows={6}
                     placeholder="Expliquez votre besoin en quelques lignes."
+                    required
                     className="min-h-[180px] w-full flex-1 border border-sand bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                   />
                 </div>
-                <Button type="submit" className="mt-auto">
-                  Envoyer
+                {status === "success" && (
+                  <p className="text-sm text-accent">
+                    Votre message a bien été envoyé.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-sm text-red-600">{errorMessage}</p>
+                )}
+                <Button type="submit" className="mt-auto" disabled={status === "loading"}>
+                  {status === "loading" ? "Envoi..." : "Envoyer"}
                 </Button>
               </form>
             </Card>
