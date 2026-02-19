@@ -86,6 +86,8 @@ export default function ContactPage() {
                     alt="Localisation du cabinet"
                     width={1200}
                     height={800}
+                    sizes="(min-width: 1024px) 40vw, 100vw"
+                    quality={70}
                     className="h-full w-full object-cover"
                   />
                 </div>

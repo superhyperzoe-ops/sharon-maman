@@ -24,6 +24,8 @@ export default function CabinetPage() {
                   alt="Portrait de Maître Sharon Maman"
                   width={1200}
                   height={1600}
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  quality={70}
                   className="h-full w-full rounded-none object-cover"
                 />
               </div>

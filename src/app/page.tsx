@@ -10,6 +10,8 @@ export default function Home() {
         alt="Vue sobre de Paris évoquant un cabinet d'avocat"
         fill
         priority
+        sizes="100vw"
+        quality={70}
         className="object-cover object-[center_65%]"
       />
       <div className="absolute inset-0 bg-white/60" aria-hidden="true" />
