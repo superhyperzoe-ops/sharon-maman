@@ -64,7 +64,7 @@ export function Header() {
             Menu
             <span aria-hidden="true">{isMobileOpen ? "✕" : "☰"}</span>
           </button>
-          <nav className="ml-auto hidden items-center gap-6 pr-36 md:flex" aria-label="Menu">
+          <nav className="ml-auto hidden items-center gap-6 pr-24 md:flex" aria-label="Menu">
             <div
               className="relative flex items-center gap-2"
               ref={cabinetRef}
@@ -73,7 +73,7 @@ export function Header() {
             >
               <Link
                 href="/cabinet"
-                className={`text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                className={`text-xs font-medium uppercase tracking-[0.12em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                   isCabinetActive ? "text-accent" : "text-ink"
                 }`}
               >
@@ -125,7 +125,7 @@ export function Header() {
             >
               <Link
                 href="/expertises"
-                className={`text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                className={`text-xs font-medium uppercase tracking-[0.12em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                   isExpertisesActive ? "text-accent" : "text-ink"
                 }`}
               >
@@ -192,7 +192,7 @@ export function Header() {
               <div className="space-y-2">
                 <Link
                   href="/cabinet"
-                  className={`block text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
+                  className={`block text-xs font-medium uppercase tracking-[0.12em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
                     isCabinetActive ? "text-accent" : "text-ink"
                   }`}
                   onClick={() => setIsMobileOpen(false)}
@@ -226,7 +226,7 @@ export function Header() {
               <div className="space-y-2">
                 <Link
                   href="/expertises"
-                  className={`block text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
+                  className={`block text-xs font-medium uppercase tracking-[0.12em] transition-colors hover:text-accent focus-visible:text-accent active:text-accent ${
                     isExpertisesActive ? "text-accent" : "text-ink"
                   }`}
                   onClick={() => setIsMobileOpen(false)}
@@ -279,7 +279,7 @@ export function Header() {
         </div>
       )}
       <div className="absolute right-6 top-1/2 hidden -translate-y-1/2 md:block">
-        <Button href="/contact" className="px-4 py-2 text-[11px]">
+        <Button href="/contact" className="px-4 py-2 text-[11px] tracking-[0.12em]">
           Prendre rendez-vous
         </Button>
       </div>

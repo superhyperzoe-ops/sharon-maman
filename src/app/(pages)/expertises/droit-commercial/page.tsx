@@ -48,7 +48,7 @@ export default function DroitCommercialPage() {
               enjeux économiques et stratégiques poursuivis, ainsi qu’aux règles applicables à ces
               activités.
             </p>
-            <p className="pt-2 text-base italic font-semibold text-accent">
+            <p className="pt-2 text-base italic font-medium text-accent">
               Le cabinet se tient à votre disposition pour analyser et sécuriser vos relations
               commerciales.
             </p>

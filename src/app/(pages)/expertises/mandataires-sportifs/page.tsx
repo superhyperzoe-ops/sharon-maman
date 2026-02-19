@@ -47,7 +47,7 @@ export default function MandatairesSportifsPage() {
               au service de sportifs professionnels comme d’acteurs en devenir, avec la même
               exigence et la même rigueur.
             </p>
-            <p className="pt-2 text-base italic font-semibold text-accent">
+            <p className="pt-2 text-base italic font-medium text-accent">
               En qualité de mandataire sportif, Maître Sharon Maman vous accompagne avec exigence
               et vision stratégique dans la protection et la valorisation de vos intérêts.
             </p>

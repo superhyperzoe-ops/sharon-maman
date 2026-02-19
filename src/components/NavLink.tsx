@@ -14,7 +14,7 @@ export function NavLink({ href, children, className = "" }: NavLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
   const classes = [
-      "text-xs font-semibold uppercase tracking-[0.2em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+      "text-xs font-medium uppercase tracking-[0.12em] transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
     isActive ? "text-accent" : "text-ink",
     className,
   ]

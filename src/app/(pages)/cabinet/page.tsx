@@ -111,7 +111,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
                     Vision stratégique
                   </p>
                   <p className="mt-2">
@@ -125,7 +125,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
                     Anticipation &amp; sécurisation
                   </p>
                   <p className="mt-2">
@@ -139,7 +139,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
                     Rigueur, clarté, efficacité
                   </p>
                   <p className="mt-2">
@@ -153,7 +153,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
                     Accompagnement sur mesure
                   </p>
                   <p className="mt-2">
@@ -167,7 +167,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="text-xs font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
                     Transparence
                   </p>
                   <p className="mt-2">
@@ -179,8 +179,8 @@ export default function CabinetPage() {
           </div>
 
           <div className="mt-6 text-[16px] italic leading-[1.6] text-ink/80">
-            « Au-delà du conseil juridique, le cabinet entend être un partenaire de
-            confiance, impliqué et pleinement investi aux côtés de ses clients. »
+            Au-delà du conseil juridique, le cabinet entend être un partenaire de
+            confiance, impliqué et pleinement investi aux côtés de ses clients.
           </div>
         </Container>
       </Section>

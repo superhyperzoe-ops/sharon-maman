@@ -58,7 +58,7 @@ const expertises = [
       "Concurrence et distribution : contrat de distribution, réseaux, CGV",
       "Relations commerciales : structuration et sécurisation des relations d’affaires",
       "Pratiques restrictives et conformité concurrentielle",
-      "Contrats commerciaux : baux commerciaux, prestations de service, location-gérance, partenariats, CGV/CGU",
+      "Contrats commerciaux : baux commerciaux, prestations de service, location-gérance, partenariats, CGV/CGU...",
     ],
     summary:
       "Le cabinet veille à la conformité et à la solidité juridique de vos relations commerciales.",
@@ -133,7 +133,7 @@ export default function ExpertisesPage() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-auto pt-2 text-justify text-xs leading-relaxed text-ink/60 sm:pt-3">
+                <p className="mt-auto pt-2 text-justify text-sm leading-relaxed text-ink/60 sm:pt-3">
                   {expertise.summary}
                 </p>
               </div>

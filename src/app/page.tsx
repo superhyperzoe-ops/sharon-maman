@@ -25,7 +25,9 @@ export default function Home() {
             L'exigence au service de vos ambitions
           </p>
           <div className="flex justify-center">
-            <Button href="/contact">Prendre Rendez-vous</Button>
+            <Button href="/contact" className="tracking-[0.12em]">
+              Prendre Rendez-vous
+            </Button>
           </div>
         </div>
       </Container>

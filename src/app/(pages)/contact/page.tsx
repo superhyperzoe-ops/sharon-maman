@@ -9,8 +9,8 @@ export default function ContactPage() {
     <div className="bg-white text-ink">
       <Section className="pt-24">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
-            <div className="space-y-4">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-stretch">
+            <div className="flex h-full flex-col gap-4">
               <p className="text-xs uppercase tracking-[0.3em] text-ink/70">
                 Contact
               </p>
@@ -40,13 +40,13 @@ export default function ContactPage() {
                   Du lundi au vendredi, de 9h à 20h, sur rendez-vous uniquement
                 </p>
               </Card>
-              <div className="overflow-hidden border border-sand bg-white">
+              <div className="flex-1 border border-sand bg-white">
                 <Image
-                  src="/shacontact.jpg"
+                  src="/paris.jpg"
                   alt="Localisation du cabinet"
                   width={1200}
                   height={800}
-                  className="h-56 w-full object-cover lg:h-64"
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
