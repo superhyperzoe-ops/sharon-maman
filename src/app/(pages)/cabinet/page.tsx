@@ -128,7 +128,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-ink">
                     Vision stratégique
                   </p>
                   <p className="mt-2">
@@ -142,7 +142,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-ink">
                     Anticipation &amp; sécurisation
                   </p>
                   <p className="mt-2">
@@ -156,7 +156,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-ink">
                     Rigueur, clarté, efficacité
                   </p>
                   <p className="mt-2">
@@ -170,7 +170,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-ink">
                     Accompagnement sur mesure
                   </p>
                   <p className="mt-2">
@@ -184,7 +184,7 @@ export default function CabinetPage() {
               <div className="flex items-start gap-4">
                 <span className="text-xs font-semibold text-sand/80" aria-hidden="true" />
                 <div className="flex-1">
-                  <p className="font-display text-sm font-semibold tracking-[0.2em] text-ink">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-ink">
                     Transparence
                   </p>
                   <p className="mt-2">

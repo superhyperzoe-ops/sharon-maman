@@ -134,13 +134,13 @@ export default function ExpertisesPage() {
               className="group flex h-full flex-col border border-sand bg-sand/40 px-4 py-4 transition-colors hover:bg-sand/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:px-6 sm:py-6"
             >
               <div className="flex h-full flex-col gap-2 sm:gap-3">
-                <div className="flex items-center gap-3">
-                  {expertise.icon}
-                  <h2 className="text-lg font-semibold text-ink">
+                <div className="flex min-h-[60px] items-start gap-3 pt-3 sm:min-h-[68px]">
+                  <span className="mt-0.5">{expertise.icon}</span>
+                  <h2 className="text-lg font-semibold leading-snug text-ink">
                     {expertise.title}
                   </h2>
                 </div>
-                <ul className="space-y-1 text-sm leading-relaxed text-ink/80">
+                <ul className="min-h-[172px] space-y-1 text-sm leading-relaxed text-ink/80 sm:min-h-[192px]">
                   {expertise.items.map((item) => (
                     <li key={item} className="flex gap-2">
                       <span aria-hidden="true">•</span>
@@ -148,7 +148,7 @@ export default function ExpertisesPage() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-auto pt-2 text-justify text-sm leading-relaxed text-ink/60 sm:pt-3">
+                <p className="pt-2 text-justify text-sm leading-relaxed text-ink/60 sm:pt-3">
                   {expertise.summary}
                 </p>
               </div>
