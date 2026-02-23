@@ -62,7 +62,7 @@ export async function POST(request: Request) {
   `;
 
   try {
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "Contact <onboarding@resend.dev>",
       to,
       replyTo: email,
@@ -71,7 +71,15 @@ export async function POST(request: Request) {
       html,
     });
 
-    return NextResponse.json({ ok: true });
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: "Échec de l’envoi du message." },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ ok: true, id: data?.id });
   } catch (error) {
     return NextResponse.json(
       { error: "Échec de l’envoi du message." },

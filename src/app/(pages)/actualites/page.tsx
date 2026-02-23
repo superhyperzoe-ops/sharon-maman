@@ -55,7 +55,7 @@ export default function ActualitesPage() {
               <Link
                 key={article.title}
                 href={`/actualites/${article.slug}`}
-                className="block h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="group block h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
                 <Card className="flex h-full min-h-[220px] flex-col !bg-sand/40 transition-colors hover:!bg-sand/70 md:min-h-[260px]">
                   <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
@@ -67,8 +67,9 @@ export default function ActualitesPage() {
                   <p className="mt-3 text-sm text-ink/80">
                     {article.excerpt}
                   </p>
-                  <span className="mt-auto pt-4 text-xs uppercase tracking-[0.2em] text-ink/70">
+                  <span className="mt-auto inline-flex items-center gap-2 self-end pt-4 text-xs uppercase tracking-[0.2em] text-ink/70 transition-colors group-hover:text-ink">
                     Lire l&apos;article
+                    <span aria-hidden="true">→</span>
                   </span>
                 </Card>
               </Link>

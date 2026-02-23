@@ -33,7 +33,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-white/60" aria-hidden="true" />
       <Container className="relative z-10 flex min-h-screen items-center justify-center pt-28 pb-16 md:pt-32">
         <div className="w-full max-w-[720px] space-y-6 text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-ink sm:text-6xl">
+          <h1 className="text-5xl font-bold tracking-tight text-[#6f683f] sm:text-6xl">
             Maître Sharon Maman
           </h1>
           <p className="font-display text-xl font-semibold leading-relaxed text-ink/90 sm:text-2xl">

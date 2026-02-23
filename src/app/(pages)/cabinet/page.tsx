@@ -210,7 +210,7 @@ export default function CabinetPage() {
                 Honoraires
               </h2>
               <p className="text-sm font-semibold tracking-[0.2em] text-accent/80">
-                Une approche transparente et structurée des modalités d’intervention.
+                Une approche transparente et structurée des modalités d’intervention
               </p>
               <div className="mx-auto h-px w-16 bg-sand" aria-hidden="true" />
             </div>
