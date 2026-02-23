@@ -72,17 +72,23 @@ export async function POST(request: Request) {
     });
 
     if (error) {
+      const detail = "message" in error ? error.message : String(error);
       console.error("Resend error:", error);
       return NextResponse.json(
-        { error: "Échec de l’envoi du message." },
+        { error: "Échec de l’envoi du message.", detail },
         { status: 500 }
       );
     }
 
     return NextResponse.json({ ok: true, id: data?.id });
   } catch (error) {
+    const detail =
+      error && typeof error === "object" && "message" in error
+        ? String(error.message)
+        : String(error);
+    console.error("Contact API error:", error);
     return NextResponse.json(
-      { error: "Échec de l’envoi du message." },
+      { error: "Échec de l’envoi du message.", detail },
       { status: 500 }
     );
   }
