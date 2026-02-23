@@ -64,7 +64,10 @@ export function Header() {
             Menu
             <span aria-hidden="true">{isMobileOpen ? "✕" : "☰"}</span>
           </button>
-          <nav className="ml-auto hidden items-center gap-6 pr-24 md:flex" aria-label="Menu">
+          <nav
+            className="ml-auto hidden items-center gap-6 md:flex md:flex-nowrap"
+            aria-label="Menu"
+          >
             <div
               className="relative flex items-center gap-2"
               ref={cabinetRef}
@@ -182,6 +185,12 @@ export function Header() {
                 {item.label}
               </NavLink>
             ))}
+            <Button
+              href="/contact"
+              className="px-4 py-2 text-[11px] tracking-[0.12em] flex-shrink-0"
+            >
+              Prendre rendez-vous
+            </Button>
           </nav>
         </div>
       </Container>
@@ -278,11 +287,6 @@ export function Header() {
           </Container>
         </div>
       )}
-      <div className="absolute right-6 top-1/2 hidden -translate-y-1/2 md:block">
-        <Button href="/contact" className="px-4 py-2 text-[11px] tracking-[0.12em]">
-          Prendre rendez-vous
-        </Button>
-      </div>
     </header>
   );
 }
