@@ -71,7 +71,7 @@ export default function DroitDesAffairesPage() {
               fiscale constante et peut intervenir, le cas échéant, dans la revue de documents
               sociaux et financiers en lien avec les conseils compétents.
             </p>
-            <p className="pt-2 text-base italic font-medium text-ink">
+            <p className="pt-2 text-base font-medium text-ink">
               Le cabinet intervient dans l’ensemble des opérations structurantes et capitalistiques
               des entreprises, dirigeants et investisseurs, en assurant leur sécurisation juridique
               et la protection des intérêts en présence.

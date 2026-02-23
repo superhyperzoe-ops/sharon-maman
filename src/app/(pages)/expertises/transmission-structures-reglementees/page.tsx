@@ -62,7 +62,7 @@ export default function TransmissionStructuresReglementeesPage() {
               ainsi que plus largement dans la structuration juridique complète des opérations,
               incluant l’audit préalable et le suivi post-réalisation.
             </p>
-            <p className="pt-2 text-base italic font-medium text-ink">
+            <p className="pt-2 text-base font-medium text-ink">
               Le cabinet met à profit une expertise dédiée aux opérations de transmission et
               d’acquisition, assurant leur structuration stratégique et leur parfaite sécurisation
               juridique.
