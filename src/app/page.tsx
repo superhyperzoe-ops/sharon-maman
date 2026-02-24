@@ -34,7 +34,7 @@ export default function Home() {
       <Container className="relative z-10 flex min-h-screen items-center justify-center pt-28 pb-16 md:pt-32">
         <div className="w-full max-w-[720px] space-y-6 text-center">
           <div className="flex justify-center">
-            <h1 className="inline-block text-center font-display text-[clamp(2.4rem,5vw,3.6rem)] font-[500] tracking-normal text-ink whitespace-nowrap">
+            <h1 className="inline-block text-center font-display text-[clamp(2.2rem,6vw,3.6rem)] font-light tracking-normal text-ink whitespace-normal break-words md:whitespace-nowrap">
               Maître Sharon Maman
             </h1>
           </div>
