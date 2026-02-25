@@ -22,7 +22,7 @@ export default function CabinetPage() {
     <div className="cabinet-page bg-white text-ink">
       <Section id="presentation" className="pt-0 pb-16 scroll-mt-24">
         <Container className="max-w-[1200px]">
-          <div className="mx-auto mb-12 max-w-[820px] space-y-3 text-center">
+          <div className="mx-auto mb-12 max-w-[820px] space-y-3 text-center pt-3 sm:pt-0">
             <h2 className="text-3xl font-semibold uppercase tracking-[0.25em] text-ink">
               Sharon MAMAN
             </h2>

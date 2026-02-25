@@ -31,7 +31,7 @@ export default function Home() {
         className="object-cover object-[center_65%]"
       />
       <div className="absolute inset-0 bg-white/60" aria-hidden="true" />
-      <Container className="relative z-10 flex min-h-screen items-center justify-center pt-28 pb-16 md:pt-32">
+      <Container className="relative z-10 flex min-h-screen items-center justify-center py-20 md:pt-32 md:pb-16">
         <div className="w-full max-w-[720px] space-y-6 text-center">
           <div className="flex justify-center">
             <h1 className="inline-block text-center font-display text-[clamp(2.2rem,6vw,3.6rem)] font-light tracking-normal text-ink whitespace-normal break-words md:whitespace-nowrap">
