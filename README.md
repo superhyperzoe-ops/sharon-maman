@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Favicon (Safari cache)
+
+Safari can cache favicons aggressively. We version favicon URLs with `?v=2` and
+set no-store headers on favicon assets. If the icon still does not update:
+
+- Safari: enable Develop menu → Develop → Empty Caches
+- Remove site data for `sharonmaman-avocat.fr`
+- Reopen Safari and load the site in a private window

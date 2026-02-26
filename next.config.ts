@@ -16,25 +16,25 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: "/favicon-2.ico",
+        source: "/favicon-32x32.png",
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
         ],
       },
       {
-        source: "/favicon-2.png",
+        source: "/favicon-16x16.png",
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
         ],
       },
       {
-        source: "/favicon-3.ico",
+        source: "/android-chrome-192x192.png",
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
         ],
       },
       {
-        source: "/favicon-3.png",
+        source: "/android-chrome-512x512.png",
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
         ],
@@ -46,7 +46,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: "/icon",
+        source: "/site.webmanifest",
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
         ],
