@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   description:
     "Cabinet d'avocat à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
   icons: {
-    icon: "/favicon-2.ico",
-    shortcut: "/favicon-2.ico",
+    icon: "/favicon-3.ico",
+    shortcut: "/favicon-3.ico",
     apple: "/apple-touch-icon.png",
   },
   keywords: [

@@ -16,6 +16,30 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: "/favicon-2.ico",
+        headers: [
+          { key: "Cache-Control", value: "no-store, max-age=0" },
+        ],
+      },
+      {
+        source: "/favicon-2.png",
+        headers: [
+          { key: "Cache-Control", value: "no-store, max-age=0" },
+        ],
+      },
+      {
+        source: "/favicon-3.ico",
+        headers: [
+          { key: "Cache-Control", value: "no-store, max-age=0" },
+        ],
+      },
+      {
+        source: "/favicon-3.png",
+        headers: [
+          { key: "Cache-Control", value: "no-store, max-age=0" },
+        ],
+      },
+      {
         source: "/apple-touch-icon.png",
         headers: [
           { key: "Cache-Control", value: "no-store, max-age=0" },
