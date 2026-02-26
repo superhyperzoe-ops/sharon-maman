@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   },
   description:
     "Cabinet d'avocat à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
+  icons: {
+    icon: "/images/flavicon.png",
+  },
   keywords: [
     "droit des affaires",
     "Sharon Maman",
