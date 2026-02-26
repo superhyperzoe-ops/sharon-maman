@@ -37,9 +37,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Favicon (Safari cache)
 
-Safari can cache favicons aggressively. We version favicon URLs with `?v=2` and
-set no-store headers on favicon assets. If the icon still does not update:
+Safari can cache favicons aggressively. We version favicon URLs with
+`?v=${FAVICON_VERSION}` (see `src/lib/site.ts`) and serve `/favicon.ico` via a
+route with `Cache-Control: no-store` for debugging. If the icon still does not update:
 
 - Safari: enable Develop menu → Develop → Empty Caches
 - Remove site data for `sharonmaman-avocat.fr`
 - Reopen Safari and load the site in a private window
+
+### Safari test procedure
+
+- Open `https://sharonmaman-avocat.fr/debug/head` and confirm the expected `<link>` tags.
+- Open `https://sharonmaman-avocat.fr/favicon.ico?v=...` and check for HTTP 200.
+- Safari → Web Inspector → Network → reload with caches disabled.
+- Filter for "favicon" and confirm a request to `/favicon.ico?v=...` (also test in Private).
+
+### Reverting versioned URLs
+
+If you want to remove query params, update `src/app/layout.tsx` to use plain
+`/favicon.ico`, `/favicon-32x32.png`, `/favicon-16x16.png`, `/apple-touch-icon.png`
+and remove `FAVICON_VERSION` from `src/lib/site.ts`.

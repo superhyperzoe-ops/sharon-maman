@@ -3,6 +3,7 @@ import { Frank_Ruhl_Libre, Libre_Baskerville, Montserrat } from "next/font/googl
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { FAVICON_VERSION } from "@/lib/site";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -32,11 +33,25 @@ export const metadata: Metadata = {
     "Cabinet d'avocat à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: `/favicon.ico?v=${FAVICON_VERSION}` },
+      {
+        url: `/favicon-32x32.png?v=${FAVICON_VERSION}`,
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: `/favicon-16x16.png?v=${FAVICON_VERSION}`,
+        sizes: "16x16",
+        type: "image/png",
+      },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [
+      {
+        url: `/apple-touch-icon.png?v=${FAVICON_VERSION}`,
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
   keywords: [
     "droit des affaires",
@@ -70,8 +85,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const faviconSuffix = `?v=${FAVICON_VERSION}`;
+
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href={`/favicon.ico${faviconSuffix}`} sizes="any" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={`/favicon-32x32.png${faviconSuffix}`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={`/favicon-16x16.png${faviconSuffix}`}
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`/apple-touch-icon.png${faviconSuffix}`}
+        />
+      </head>
       <body
         className={`${montserrat.variable} ${libreBaskerville.variable} ${frankRuhlLibre.variable} bg-background text-ink antialiased`}
       >
