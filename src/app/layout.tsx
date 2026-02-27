@@ -3,7 +3,7 @@ import { Frank_Ruhl_Libre, Libre_Baskerville, Montserrat } from "next/font/googl
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { FAVICON_VERSION } from "@/lib/site";
+import { FAVICON_VERSION, SITE_URL } from "@/lib/site";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -24,13 +24,13 @@ const frankRuhlLibre = Frank_Ruhl_Libre({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sharonmaman.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sharon Maman — Avocat Paris",
+    default: "Sharon Maman | Avocat à Paris",
     template: "%s | Sharon Maman",
   },
   description:
-    "Cabinet d'avocat à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
+    "Maître Sharon Maman, avocate à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
   icons: {
     icon: [
       { url: `/favicon.ico?v=${FAVICON_VERSION}` },
@@ -67,16 +67,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://sharonmaman.vercel.app",
-    title: "Sharon Maman — Avocat Paris",
+    url: SITE_URL,
+    title: "Sharon Maman | Avocat à Paris",
     description:
-      "Cabinet d'avocat à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
+      "Maître Sharon Maman, avocate à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
+    siteName: "Sharon Maman",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sharon Maman — Avocat Paris",
+    title: "Sharon Maman | Avocat à Paris",
     description:
-      "Cabinet d'avocat à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
+      "Maître Sharon Maman, avocate à Paris. Conseil stratégique, défense et accompagnement juridique sur mesure.",
   },
 };
 
@@ -118,10 +119,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LegalService",
-              name: "Sharon Maman",
-              url: "https://sharonmaman.vercel.app",
+              name: "Maître Sharon Maman",
+              url: SITE_URL,
               telephone: "+33 6 35 41 74 67",
               email: "sharonmaman.law@gmail.com",
+              image: `${SITE_URL}/Sharon2.jpeg`,
+              jobTitle: "Avocate",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "16 rue Washington",

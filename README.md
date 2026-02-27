@@ -47,7 +47,6 @@ route with `Cache-Control: no-store` for debugging. If the icon still does not u
 
 ### Safari test procedure
 
-- Open `https://sharonmaman-avocat.fr/debug/head` and confirm the expected `<link>` tags.
 - Open `https://sharonmaman-avocat.fr/favicon.ico?v=...` and check for HTTP 200.
 - Safari → Web Inspector → Network → reload with caches disabled.
 - Filter for "favicon" and confirm a request to `/favicon.ico?v=...` (also test in Private).

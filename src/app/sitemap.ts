@@ -1,21 +1,20 @@
 import type { MetadataRoute } from "next";
-
-const baseUrl = "https://sharonmaman.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: `${baseUrl}/`, lastModified: new Date() },
-    { url: `${baseUrl}/cabinet`, lastModified: new Date() },
-    { url: `${baseUrl}/expertises`, lastModified: new Date() },
-    { url: `${baseUrl}/expertises/droit-des-affaires`, lastModified: new Date() },
-    { url: `${baseUrl}/expertises/transmission-structures-reglementees`, lastModified: new Date() },
-    { url: `${baseUrl}/expertises/droit-commercial`, lastModified: new Date() },
-    { url: `${baseUrl}/expertises/mandataires-sportifs`, lastModified: new Date() },
-    { url: `${baseUrl}/actualites`, lastModified: new Date() },
-    { url: `${baseUrl}/actualites/reprise-activite`, lastModified: new Date() },
-    { url: `${baseUrl}/actualites/pacte-associes`, lastModified: new Date() },
-    { url: `${baseUrl}/contact`, lastModified: new Date() },
-    { url: `${baseUrl}/mentions-legales`, lastModified: new Date() },
-    { url: `${baseUrl}/confidentialite`, lastModified: new Date() },
+    { url: `${SITE_URL}/`, lastModified: new Date() },
+    { url: `${SITE_URL}/cabinet`, lastModified: new Date() },
+    { url: `${SITE_URL}/expertises`, lastModified: new Date() },
+    { url: `${SITE_URL}/expertises/droit-des-affaires`, lastModified: new Date() },
+    { url: `${SITE_URL}/expertises/transmission-structures-reglementees`, lastModified: new Date() },
+    { url: `${SITE_URL}/expertises/droit-commercial`, lastModified: new Date() },
+    { url: `${SITE_URL}/expertises/mandataires-sportifs`, lastModified: new Date() },
+    { url: `${SITE_URL}/actualites`, lastModified: new Date() },
+    { url: `${SITE_URL}/actualites/reprise-activite`, lastModified: new Date() },
+    { url: `${SITE_URL}/actualites/pacte-associes`, lastModified: new Date() },
+    { url: `${SITE_URL}/contact`, lastModified: new Date() },
+    { url: `${SITE_URL}/mentions-legales`, lastModified: new Date() },
+    { url: `${SITE_URL}/confidentialite`, lastModified: new Date() },
   ];
 }

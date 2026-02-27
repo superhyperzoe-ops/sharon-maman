@@ -4,10 +4,11 @@ import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 
 export const metadata: Metadata = {
-  title: "Avocat en droit des affaires à Paris",
+  title: "Sharon Maman, avocat en droit des affaires à Paris",
   description:
-    "Sharon Maman, avocate à Paris. Cabinet spécialisé en droit des affaires, fusion-acquisition, transmission d'entreprise et droit commercial.",
+    "Maître Sharon Maman, avocate à Paris. Cabinet spécialisé en droit des affaires, fusion-acquisition, transmission d'entreprise et droit commercial.",
   keywords: [
+    "Sharon Maman avocat",
     "droit des affaires",
     "avocat",
     "Paris",

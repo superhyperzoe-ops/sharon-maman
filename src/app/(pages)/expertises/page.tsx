@@ -4,10 +4,11 @@ import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Expertises",
+  title: "Expertises en droit des affaires",
   description:
     "Expertises du cabinet Sharon Maman : droit des affaires, fusion-acquisition, transmission d'entreprise, droit commercial et mandataire sportif.",
   keywords: [
+    "Sharon Maman avocat",
     "droit des affaires",
     "fusion-acquisition",
     "transmission d'entreprise",

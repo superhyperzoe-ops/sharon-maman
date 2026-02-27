@@ -7,6 +7,7 @@ type Payload = {
   email?: string;
   telephone?: string;
   message?: string;
+  website?: string;
 };
 
 function sanitize(value: string | undefined) {
@@ -20,6 +21,11 @@ export async function POST(request: Request) {
   const email = sanitize(body.email);
   const telephone = sanitize(body.telephone);
   const message = sanitize(body.message);
+  const website = sanitize(body.website);
+
+  if (website) {
+    return NextResponse.json({ ok: true });
+  }
 
   if (!nom || !email || !message) {
     return NextResponse.json(

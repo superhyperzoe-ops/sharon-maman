@@ -4,10 +4,11 @@ import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 
 export const metadata: Metadata = {
-  title: "Le cabinet",
+  title: "Le cabinet Sharon Maman",
   description:
     "Présentation du cabinet Sharon Maman, avocate à Paris en droit des affaires, transmission d'entreprise, fusion-acquisition et droit commercial.",
   keywords: [
+    "Sharon Maman avocat",
     "Sharon Maman",
     "avocat",
     "Paris",

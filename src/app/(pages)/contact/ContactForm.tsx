@@ -44,6 +44,10 @@ export default function ContactForm() {
   return (
     <Card className="h-full">
       <form className="flex h-full flex-col gap-5" onSubmit={handleSubmit}>
+        <div className="hidden">
+          <label htmlFor="website">Site web</label>
+          <input id="website" name="website" type="text" autoComplete="off" />
+        </div>
         <div className="space-y-2">
           <label
             htmlFor="nom"
