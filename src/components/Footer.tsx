@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-sand bg-sand/40">
       <Container className="py-12">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid w-fit gap-6 md:grid-cols-[auto_auto] md:justify-start md:gap-8">
           <div className="space-y-3">
             <p className="text-xs uppercase tracking-[0.2em] text-ink/70">
               Coordonnées
@@ -71,28 +71,23 @@ export function Footer() {
               </Link>
             </div>
           </div>
-          <div className="space-y-3">
-            <p className="text-xs uppercase tracking-[0.2em] text-ink/70">
-              Liens légaux
-            </p>
-            <div className="flex flex-col gap-2 text-sm">
-              <Link
-                href="/mentions-legales"
-                className="text-ink transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-              >
-                Mentions légales
-              </Link>
-              <Link
-                href="/confidentialite"
-                className="text-ink transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-              >
-                Politique de confidentialité
-              </Link>
-            </div>
-          </div>
         </div>
-        <div className="mt-10 text-xs uppercase tracking-[0.2em] text-ink/60">
-          © {new Date().getFullYear()} Sharon Maman. Tous droits réservés.
+        <div className="mt-10 flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.2em] text-ink/60">
+          <span>© {new Date().getFullYear()} Sharon Maman. Tous droits réservés.</span>
+          <span aria-hidden="true">|</span>
+          <Link
+            href="/mentions-legales"
+            className="text-ink/70 transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            Mentions légales
+          </Link>
+          <span aria-hidden="true">|</span>
+          <Link
+            href="/confidentialite"
+            className="text-ink/70 transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            Politique de cookies
+          </Link>
         </div>
       </Container>
     </footer>
