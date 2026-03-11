@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-sand bg-sand/40">
       <Container className="py-12">
-        <div className="grid w-fit gap-6 md:grid-cols-[auto_auto] md:justify-start md:gap-8">
+        <div className="grid w-fit gap-6 md:grid-cols-[auto_auto] md:justify-start md:gap-24">
           <div className="space-y-3">
             <p className="text-xs uppercase tracking-[0.2em] text-ink/70">
               Coordonnées
