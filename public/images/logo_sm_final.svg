@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="120" r="116" fill="#7d7a4f" />
+  <circle cx="120" cy="120" r="106" fill="none" stroke="#f5eed8" stroke-width="1.2" opacity="0.5" />
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#f5eed8" stroke-width="0.4" opacity="0.3" />
+  <line x1="93" y1="55" x2="147" y2="55" stroke="#f5eed8" stroke-width="0.7" opacity="0.6" />
+  <circle cx="120" cy="53" r="2" fill="#f5eed8" opacity="0.7" />
+  <line x1="93" y1="185" x2="147" y2="185" stroke="#f5eed8" stroke-width="0.7" opacity="0.6" />
+  <circle cx="120" cy="187" r="2" fill="#f5eed8" opacity="0.7" />
+  <line x1="120" y1="68" x2="120" y2="172" stroke="#f5eed8" stroke-width="0.6" opacity="0.35" />
+  <text
+    x="82"
+    y="138"
+    font-family="Cormorant Garamond, serif"
+    font-size="80"
+    font-style="italic"
+    font-weight="300"
+    fill="#f5eed8"
+    text-anchor="middle"
+  >
+    S
+  </text>
+  <g transform="translate(160,162) scale(0.78) translate(-160,-162)">
+    <text
+      x="160"
+      y="162"
+      font-family="Cormorant Garamond, serif"
+      font-size="80"
+      font-weight="300"
+      fill="#f5eed8"
+      text-anchor="middle"
+    >
+      M
+    </text>
+  </g>
+</svg>
