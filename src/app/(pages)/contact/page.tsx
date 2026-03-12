@@ -6,11 +6,13 @@ import { Section } from "@/components/Section";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact | Sharon Maman",
   description:
-    "Contactez le cabinet Sharon Maman à Paris. Conseil en droit des affaires, transmission d'entreprise, acquisition et droit commercial.",
+    "Contactez Maître Sharon Maman, avocat à Paris. Conseil en droit des affaires, transmission d'entreprise, acquisition et droit commercial.",
   keywords: [
     "contact avocat",
+    "Sharon Maman avocat",
+    "avocat Paris",
     "Sharon Maman",
     "Paris",
     "droit des affaires",

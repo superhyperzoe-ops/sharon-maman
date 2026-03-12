@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/expertises/droit-commercial`, lastModified: new Date() },
     { url: `${SITE_URL}/expertises/mandataires-sportifs`, lastModified: new Date() },
     { url: `${SITE_URL}/actualites`, lastModified: new Date() },
+    { url: `${SITE_URL}/actualites/proxenetisme-hotelier`, lastModified: new Date() },
     { url: `${SITE_URL}/actualites/reprise-activite`, lastModified: new Date() },
     { url: `${SITE_URL}/actualites/pacte-associes`, lastModified: new Date() },
     { url: `${SITE_URL}/contact`, lastModified: new Date() },

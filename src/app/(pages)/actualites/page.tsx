@@ -18,6 +18,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "proxenetisme-hotelier",
+    title:
+      "Proxénétisme hôtelier : quand un propriétaire devient, à son insu, une victime",
+    date: "Tribunal correctionnel — Mars 2026",
+    excerpt:
+      "Une affaire pénale complexe sur la responsabilité des propriétaires et les limites du proxénétisme hôtelier.",
+  },
+  {
     slug: "reprise-activite",
     title:
       "Reprise de fonds de commerce ou de cabinet libéral : 5 conseils juridiques pour sécuriser votre acquisition",

@@ -25,6 +25,9 @@ const frankRuhlLibre = Frank_Ruhl_Libre({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: SITE_URL,
+  },
   title: {
     default: "Sharon Maman | Avocat à Paris",
     template: "%s | Sharon Maman",
@@ -54,8 +57,10 @@ export const metadata: Metadata = {
     ],
   },
   keywords: [
-    "droit des affaires",
     "Sharon Maman",
+    "Sharon Maman avocat",
+    "avocat Paris",
+    "droit des affaires",
     "avocat",
     "Paris",
     "mandataire sportif",
@@ -125,6 +130,10 @@ export default function RootLayout({
               email: "sharonmaman.law@gmail.com",
               image: `${SITE_URL}/Sharon2.jpeg`,
               jobTitle: "Avocate",
+              sameAs: [
+                "https://www.linkedin.com/in/sharon-maman-8b74b5154/",
+                "https://www.instagram.com/sharonmaman_avocat/?hl=fr",
+              ],
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "16 rue Washington",
