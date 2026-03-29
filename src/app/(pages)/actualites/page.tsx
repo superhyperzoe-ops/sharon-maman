@@ -23,7 +23,7 @@ const articles = [
       "Proxénétisme hôtelier : quand un propriétaire devient, à son insu, une victime",
     date: "Tribunal correctionnel — Mars 2026",
     excerpt:
-      "Une affaire pénale complexe sur la responsabilité des propriétaires et les limites du proxénétisme hôtelier.",
+      "Une affaire pénale complexe sur la responsabilité des propriétaires face au proxénétisme hôtelier.",
   },
   {
     slug: "reprise-activite",
